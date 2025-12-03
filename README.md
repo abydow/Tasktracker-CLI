@@ -128,7 +128,7 @@ Tasks are stored in a `tasks.json` file in the current directory. The JSON struc
 
 ## Error Handling
 
-The application gracefully handles various error scenarios:
+The application handles various error scenarios:
 
 - **Invalid JSON file**: Creates a new empty task list and shows a warning
 - **Missing tasks.json**: Automatically creates a new file when saving tasks
@@ -136,31 +136,6 @@ The application gracefully handles various error scenarios:
 - **Empty descriptions**: Prevents adding/updating tasks with empty descriptions
 - **File permission issues**: Shows error messages for read/write failures
 
-## Running the Demo
-
-A demo script is provided to showcase all functionality:
-
-```bash
-python demo.py
-```
-
-This will demonstrate:
-1. Adding multiple tasks
-2. Listing all tasks
-3. Updating task descriptions
-4. Changing task statuses
-5. Filtering tasks by status
-6. Deleting tasks
-
-## Project Structure
-
-```
-task-tracker/
-├── task_tracker.py    # Main application file
-├── demo.py           # Demonstration script
-├── README.md         # This documentation
-└── tasks.json        # Data file (created automatically)
-```
 
 ## Architecture
 
